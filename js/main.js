@@ -282,6 +282,7 @@ function startGame () {
     resetValues();
     startTime = new Date().getTime();
     playBtn.src="../img/stop_adobespark.png";
+    playBtn.alt ="stop-btn";
     typeBar.disabled = false;
     typeBar.focus()
     typeBar.addEventListener('keypress', keyListener);
