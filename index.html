@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Ebba Nimér
+ebni2100
+ebni2100@student.miun.se
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" async></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeWriter</title>
+</head>
+<body>
+
+    <header>
+        <img src="img/istockphoto-147873072-612x612-removebg.png" class="logo" alt="typewriter">
+        <h1>TypeWriter</h1>
+    </header>
+
+    <main>
+        <div class="flex">
+            <form>
+                <label for="ignore-casing">
+                    <input type="checkbox" id="ignore-casing">Ignore casing
+                </label>
+                <p>
+                <input type="radio" id="swe" value="swe" name="lang"> 
+                <label for="swe"> Swedish </label>
+                
+                <input type="radio" id="eng" value="eng" name="lang"> 
+                <label for="eng">English</label>
+                </p>
+        
+            </form>
+            <form>
+                <label for="text-select">Choose text:</label><br>
+                <select id="text-select"></select>
+            </form>
+        </div>
+
+        <section class="container">
+            <h3 id="text-title">Integrity</h3>
+            <p id="author"></p>
+            <p class="chosen-text"></p>
+        </section>
+
+        <input type="text" id="type-here" placeholder="Type here..." autocomplete="off" disabled autofocus/> <br>
+        
+        <img src="img/start_adobespark.png" alt="play-btn" id="play-btn">
+        <br>
+
+        <div class="flex">
+            <canvas id="canvas"></canvas>
+            <table class="stats">
+                <tr>
+                    <td>Gross WPM:</td>
+                    <td id="gross-wpm">0</td>
+                    <td>Accuracy:</td>
+                    <td id="accuracy">0%</td>
+                </tr>
+                <tr>
+                    <td>Net WPM:</td>
+                    <td id="net-wpm">0</td>
+                    <td>Errors:</td>
+                    <td id="errors">0</td>
+                </tr>
+            </table>
+        </div>
+    
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Copyright © 2021 Ebba Nimér.</p>
+        <a href="mailto:ebni2100@student.miun.se">Contact me!</a> 
+    </footer>
+    
+</body>
+</html>
