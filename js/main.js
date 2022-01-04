@@ -36,11 +36,9 @@ const right = 300;
 const height = 150;
 const width = 300;
 
-playBtn.addEventListener("error", imgError)
-
-function imgError(){
+playBtn.onerror = function(){
     playBtn.src = "../img/start_adobespark.png"
-}
+};
 
 fillCanvas();
 
