@@ -3,6 +3,7 @@ var authorDisplay = document.getElementById('author');
 var storyDisplay = document.getElementsByClassName('chosen-text');
 
 const playBtn = document.getElementById('play-btn');
+playBtn.src="../img/start_adobespark.png";
 var selectStory = document.getElementById('text-select');
 var typeBar = document.getElementById('type-here');
 
