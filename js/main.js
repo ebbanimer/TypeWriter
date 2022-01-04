@@ -36,6 +36,12 @@ const right = 300;
 const height = 150;
 const width = 300;
 
+playBtn.addEventListener("error", imgError)
+
+function imgError(){
+    playBtn.src = "../img/start_adobespark.png"
+}
+
 fillCanvas();
 
 // Function to fill canvas property with reference lines.
