@@ -281,7 +281,7 @@ playBtn.addEventListener('click', () => {
 function startGame () {
     resetValues();
     startTime = new Date().getTime();
-    playBtn.src="../img/stop_adobespark.png";
+    playBtn.src="img/stop_adobespark.png";
     playBtn.alt ="stop-btn";
     typeBar.disabled = false;
     typeBar.focus()
@@ -295,7 +295,7 @@ function keyListener(e){
 
 // Function to stop the game. Remove the eventlistener and disable the typebar
 function stopGame(){
-    playBtn.src="../img/start_adobespark.png";
+    playBtn.src="img/start_adobespark.png";
     typeBar.value = "Game Ended"
     typeBar.disabled = true;
     typeBar.removeEventListener('keypress', keyListener)
