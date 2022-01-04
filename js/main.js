@@ -3,7 +3,6 @@ var authorDisplay = document.getElementById('author');
 var storyDisplay = document.getElementsByClassName('chosen-text');
 
 const playBtn = document.getElementById('play-btn');
-playBtn.src="../img/start_adobespark.png";
 var selectStory = document.getElementById('text-select');
 var typeBar = document.getElementById('type-here');
 
@@ -36,8 +35,8 @@ const right = 300;
 const height = 150;
 const width = 300;
 
-playBtn.onerror = function(){
-    playBtn.src = "../img/start_adobespark.png"
+playBtn.handle404 = function(err){
+    return playBtn.src = "../img/start_adobespark.png";
 };
 
 fillCanvas();
