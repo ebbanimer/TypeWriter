@@ -292,6 +292,10 @@ function startGame () {
 // The function that is used to listen to the keys
 function keyListener(e){
     
+    if (e.data == null){
+        return
+    }
+    
     game(e)
 
     
