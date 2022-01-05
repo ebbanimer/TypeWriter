@@ -36,7 +36,7 @@ const height = 150;
 const width = 300;
 
 playBtn.handle404 = function(err){
-    return playBtn.src = "../img/start_adobespark.png";
+    return playBtn.src = "img/start_adobespark.png";
 };
 
 fillCanvas();
@@ -324,7 +324,7 @@ function resetValues (){
     typedChars = 0;
     endTime = null;
     startTime = null;
-    playBtn.src="../img/start_adobespark.png";
+    playBtn.src="img/start_adobespark.png";
     errors.innerHTML = 0;
     accuracy.innerHTML = 0;
     grossWpm.innerHTML = 0;
